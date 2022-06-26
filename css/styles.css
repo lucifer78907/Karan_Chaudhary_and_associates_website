@@ -1,3 +1,19 @@
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-20rem);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(20rem);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
 *,
 *::before,
 *::after {
@@ -23,7 +39,10 @@ body {
 .heading__primary {
   font-family: var(--font-secondary);
   color: #222831;
-  font-size: 11.6rem; }
+  font-size: 11.6rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  animation: slideInLeft 700ms ease-out; }
 
 .hero {
   height: 100vh;
@@ -39,7 +58,9 @@ body {
     gap: 3rem; }
   .hero__tagline {
     font-size: 2rem;
-    color: #222831; }
+    color: #222831;
+    animation: slideUp 500ms ease-out backwards;
+    animation-delay: 500ms; }
   .hero__img {
     width: 40vh;
     border-radius: 9px;

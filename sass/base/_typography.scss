@@ -2,4 +2,7 @@
   font-family: var(--font-secondary);
   color: $color-grey-darkest;
   font-size: 11.6rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  animation: slideInLeft 700ms ease-out;
 }

@@ -16,6 +16,8 @@
   &__tagline {
     font-size: 2rem;
     color: $color-grey-darkest;
+    animation: slideUp 500ms ease-out backwards;
+    animation-delay: 500ms;
   }
 
   &__img {
