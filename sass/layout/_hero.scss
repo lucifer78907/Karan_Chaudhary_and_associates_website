@@ -2,7 +2,8 @@
   height: 100vh;
   padding: 9.6rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  background-color: $color-primary;
+  grid-template-columns: repeat(auto-fit, minmax(50rem, max-content));
   justify-items: center;
   align-items: center;
 
@@ -10,10 +11,16 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    align-items: center;
+  }
+
+  &__tagline {
+    font-size: 2rem;
+    color: $color-grey-darkest;
   }
 
   &__img {
     width: 40vh;
+    border-radius: 9px;
+    box-shadow: var(--shadow-light-bordered);
   }
 }
