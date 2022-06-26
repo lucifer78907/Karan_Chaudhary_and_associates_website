@@ -1,0 +1,14 @@
+{
+  "name": "karan_chaudhary_and_advocates_website",
+  "version": "1.0.0",
+  "description": "website for karan chaudhary advocates",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

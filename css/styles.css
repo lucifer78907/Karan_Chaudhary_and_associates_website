@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  line-height: 1;
+  font-family: var(--font-primary); }
+
+:root {
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Playfair Display", serif; }
+
+.heading__primary {
+  font-family: var(--font-secondary);
+  font-size: 9.6rem; }
+
+.hero {
+  height: 100vh;
+  padding: 9.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center; }
+  .hero__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center; }
+  .hero__img {
+    width: 40vh; }

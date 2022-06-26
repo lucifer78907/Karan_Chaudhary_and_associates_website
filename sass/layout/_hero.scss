@@ -1,0 +1,19 @@
+.hero {
+  height: 100vh;
+  padding: 9.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  &__img {
+    width: 40vh;
+  }
+}
