@@ -1,0 +1,36 @@
+.btn {
+  &:link,
+  &:visited {
+    align-self: flex-start;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: $color-grey-light;
+    background-image: linear-gradient(
+      105deg,
+      #222831 0%,
+      #222831 50%,
+      #fff 50%
+    );
+    background-position: left;
+    background-size: 300%;
+    padding: 1.2rem 2.4rem;
+    box-shadow: 0 0.25rem 1rem rgba(34, 40, 49, 0.549);
+    border-radius: 9px;
+    transition: all 0.5s;
+    animation: slideUp 500ms ease-out backwards;
+    animation-delay: 1s;
+  }
+
+  &:hover {
+    color: $color-grey-dark;
+    transform: translateY(-10px);
+    background-position: right;
+    box-shadow: var(--shadow-light-bordered);
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}

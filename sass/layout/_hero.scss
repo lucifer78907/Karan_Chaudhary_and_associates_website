@@ -2,7 +2,15 @@
   height: 100vh;
   padding: 9.6rem;
   display: grid;
-  background-color: $color-primary;
+  // background-color: $color-primary;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 210, 105, 0.823),
+      rgba(240, 184, 52, 0.825)
+    ),
+    url("../../img/hero-img.webp");
+  background-size: cover;
+  background-position: center;
   grid-template-columns: repeat(auto-fit, minmax(50rem, max-content));
   justify-items: center;
   align-items: center;
@@ -18,6 +26,7 @@
     color: $color-grey-darkest;
     animation: slideUp 500ms ease-out backwards;
     animation-delay: 500ms;
+    margin-bottom: 4rem;
   }
 
   &__img {
