@@ -65,10 +65,14 @@ body {
     top: 0;
     left: -3%;
     background-color: #ffd369;
-    height: 100%;
+    height: 110%;
     width: 2px;
     z-index: -1;
     transition: all 500ms; }
+  .heading__secondary--light {
+    color: #fff; }
+    .heading__secondary--light:hover {
+      color: #222831; }
 
 .margin-bottom-sm {
   margin-bottom: 2rem !important; }
@@ -107,6 +111,10 @@ body {
 
 .btn:active {
   transform: translateY(2px); }
+
+.choose {
+  padding: 8rem;
+  background-color: #222831; }
 
 .hero {
   height: 100vh;
