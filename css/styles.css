@@ -47,10 +47,28 @@ body {
 
 .heading__secondary {
   display: inline-block;
+  position: relative;
   font-size: 8rem;
   font-weight: 300;
   color: #222831;
-  letter-spacing: -1px; }
+  letter-spacing: -1px;
+  border-bottom: transparent solid 1px;
+  transition: border-bottom 500ms;
+  z-index: 2; }
+  .heading__secondary:hover::before {
+    width: 105%;
+    box-shadow: 0 0.025rem 0.75rem rgba(34, 40, 49, 0.505); }
+  .heading__secondary::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -3%;
+    background-color: #ffd369;
+    height: 100%;
+    width: 2px;
+    z-index: -1;
+    transition: all 500ms; }
 
 .margin-bottom-sm {
   margin-bottom: 2rem !important; }

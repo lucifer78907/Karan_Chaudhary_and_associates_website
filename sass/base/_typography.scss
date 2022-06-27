@@ -9,8 +9,32 @@
 
 .heading__secondary {
   display: inline-block;
+  position: relative;
   font-size: 8rem;
   font-weight: 300;
   color: $color-grey-darkest;
   letter-spacing: -1px;
+  border-bottom: transparent solid 1px;
+  transition: border-bottom 500ms;
+  z-index: 2;
+
+  &:hover {
+    &::before {
+      width: 105%;
+      box-shadow: 0 0.025rem 0.75rem rgba(34, 40, 49, 0.505);
+    }
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -3%;
+    background-color: $color-primary;
+    height: 100%;
+    width: 2px;
+    z-index: -1;
+    transition: all 500ms;
+  }
 }
