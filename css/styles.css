@@ -34,7 +34,8 @@ body {
 :root {
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Playfair Display", serif;
-  --shadow-light-bordered: 0 0rem 1rem #222831; }
+  --shadow-light-bordered: 0 0rem 1rem #222831;
+  --shadow-light-bordered-yellow: 0 0rem 1rem #ffd369; }
 
 .heading__primary {
   font-family: var(--font-secondary);
@@ -43,6 +44,25 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   animation: slideInLeft 700ms ease-out; }
+
+.heading__secondary {
+  display: inline-block;
+  font-size: 8rem;
+  font-weight: 300;
+  color: #222831;
+  letter-spacing: -1px; }
+
+.margin-bottom-sm {
+  margin-bottom: 2rem !important; }
+
+.margin-bottom-md {
+  margin-bottom: 4rem !important; }
+
+.margin-bottom-lg {
+  margin-bottom: 6rem !important; }
+
+.margin-bottom-xl {
+  margin-bottom: 8rem !important; }
 
 .btn:link, .btn:visited {
   align-self: flex-start;
@@ -94,3 +114,47 @@ body {
     width: 40vh;
     border-radius: 9px;
     box-shadow: var(--shadow-light-bordered); }
+
+.intro {
+  padding: 8rem;
+  background-color: #eee; }
+  .intro__main-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, max-content));
+    justify-items: center;
+    column-gap: 8rem; }
+  .intro__para {
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #393e46; }
+    .intro__para strong {
+      font-weight: 700; }
+  .intro__img-box {
+    display: flex;
+    justify-content: center;
+    position: relative; }
+  .intro__img-desc {
+    position: absolute;
+    bottom: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 0.3s; }
+  .intro__img {
+    height: 75%;
+    box-shadow: var(--shadow-light-bordered);
+    border-radius: 9px;
+    transition: all 0.5s; }
+    .intro__img:hover {
+      filter: blur(2px) brightness(50%); }
+    .intro__img:hover + .intro__img-desc {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: none;
+      bottom: 60%; }

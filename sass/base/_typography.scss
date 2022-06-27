@@ -6,3 +6,11 @@
   backface-visibility: hidden;
   animation: slideInLeft 700ms ease-out;
 }
+
+.heading__secondary {
+  display: inline-block;
+  font-size: 8rem;
+  font-weight: 300;
+  color: $color-grey-darkest;
+  letter-spacing: -1px;
+}
