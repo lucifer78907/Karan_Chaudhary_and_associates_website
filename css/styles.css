@@ -74,6 +74,15 @@ body {
     .heading__secondary--light:hover {
       color: #222831; }
 
+.heading__tertiary {
+  font-size: 4.8rem;
+  color: #222831;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; }
+
 .margin-bottom-sm {
   margin-bottom: 2rem !important; }
 
@@ -85,6 +94,9 @@ body {
 
 .margin-bottom-xl {
   margin-bottom: 8rem !important; }
+
+.text__center {
+  text-align: center !important; }
 
 .btn:link, .btn:visited {
   align-self: flex-start;
@@ -111,6 +123,17 @@ body {
 
 .btn:active {
   transform: translateY(2px); }
+
+.card {
+  clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+  padding: 2rem 6rem;
+  background-color: #ffd369;
+  margin-bottom: 6rem; }
+  .card__article {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #222831;
+    line-height: 1.6; }
 
 .choose {
   padding: 8rem;
@@ -167,9 +190,6 @@ body {
     font-weight: 300;
     color: #222831;
     margin-bottom: 8rem; }
-  .how_we_work--main-box {
-    display: flex;
-    flex-direction: column; }
 
 .intro {
   padding: 8rem;

@@ -1,0 +1,13 @@
+.card {
+  clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+  padding: 2rem 6rem;
+  background-color: $color-primary;
+  margin-bottom: 6rem;
+
+  &__article {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: $color-grey-darkest;
+    line-height: 1.6;
+  }
+}
