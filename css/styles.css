@@ -159,6 +159,18 @@ body {
     border-radius: 9px;
     box-shadow: var(--shadow-light-bordered); }
 
+.how_we_work {
+  padding: 8rem;
+  background-color: #eee; }
+  .how_we_work__tagline {
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: #222831;
+    margin-bottom: 8rem; }
+  .how_we_work--main-box {
+    display: flex;
+    flex-direction: column; }
+
 .intro {
   padding: 8rem;
   background-color: #eee; }

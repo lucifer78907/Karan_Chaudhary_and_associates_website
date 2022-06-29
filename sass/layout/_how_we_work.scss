@@ -1,0 +1,16 @@
+.how_we_work {
+  padding: 8rem;
+  background-color: $color-grey-light;
+
+  &__tagline {
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: $color-grey-darkest;
+    margin-bottom: 8rem;
+  }
+
+  &--main-box {
+    display: flex;
+    flex-direction: column;
+  }
+}
