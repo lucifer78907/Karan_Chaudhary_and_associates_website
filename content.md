@@ -23,19 +23,13 @@ One stop place for all legal services
 
 We Provide Solution with Bigger Impact
 
-￼
-
 Understanding
 
 We give priority to your legal queries and problems. Many times the problem which is visible at the surface has its underlying foundations dove in much deeper and relates to numerous legal complexities. We believe in devoting sufficient time, listening to our clients while understanding their issues, and do not jump directly to conclusions.
 
-￼
-
 Strategic Planning
 
 A team of our lawyers and researchers get on to your legal issue and map out a complete action plan. Our team further formulates a strategy to aggressively defend and contest your stance, ensuring your best interest. Our knowledge combined with an effective, solution-oriented approach helps smooth out the complete process for you.
-
-￼
 
 Implementing the Steps
 
