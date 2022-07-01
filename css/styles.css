@@ -83,6 +83,11 @@ body {
   align-items: center;
   gap: 2rem; }
 
+.heading__quaternary {
+  font-size: 3rem;
+  color: #eee;
+  margin-bottom: 2rem; }
+
 .margin-bottom-sm {
   margin-bottom: 2rem !important; }
 
@@ -209,7 +214,8 @@ body {
   .intro__img-box {
     display: flex;
     justify-content: center;
-    position: relative; }
+    position: relative;
+    transition: all 500ms; }
   .intro__img-desc {
     position: absolute;
     bottom: 26%;
@@ -234,3 +240,30 @@ body {
       visibility: visible;
       pointer-events: none;
       bottom: 60%; }
+
+.practice__areas {
+  padding: 8rem;
+  background-color: #222831; }
+  .practice__areas--cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 4rem; }
+  .practice__areas--card {
+    color: #fff; }
+    .practice__areas--card:nth-child(2) {
+      grid-row: 2/-1;
+      grid-column: 2 / span 1; }
+    .practice__areas--card:nth-child(3) {
+      grid-column: 3/-1; }
+    .practice__areas--card__content {
+      padding: 2rem; }
+      .practice__areas--card__content:hover {
+        transform: scale(1.05); }
+    .practice__areas--card__content--para {
+      font-size: 1.6rem;
+      line-height: 1.6; }
+  .practice__areas--icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-bottom: 2.4rem; }
