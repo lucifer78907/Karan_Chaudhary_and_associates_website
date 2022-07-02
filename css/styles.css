@@ -250,7 +250,16 @@ body {
     column-gap: 6rem;
     row-gap: 8rem; }
   .practice__areas--card {
-    color: #fff; }
+    color: #fff;
+    transition: all 500ms; }
+    .practice__areas--card:hover {
+      transform: scale(1.1);
+      background-color: #eee;
+      border-radius: 11px; }
+    .practice__areas--card:hover .heading__quaternary {
+      color: #222831; }
+    .practice__areas--card:hover > * {
+      color: #222831; }
     .practice__areas--card__content {
       padding: 2rem; }
     .practice__areas--card__content--para {

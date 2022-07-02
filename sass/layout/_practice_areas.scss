@@ -11,15 +11,21 @@
 
   &--card {
     color: $color-white;
+    transition: all 500ms;
 
-    // &:nth-child(2) {
-    //   grid-row: 2/-1;
-    //   grid-column: 2 / span 1;
-    // }
+    &:hover {
+      transform: scale(1.1);
+      background-color: $color-grey-light;
+      border-radius: 11px;
+    }
 
-    // &:nth-child(3) {
-    //   grid-column: 3/-1;
-    // }
+    &:hover .heading__quaternary {
+      color: $color-grey-darkest;
+    }
+
+    &:hover > * {
+      color: $color-grey-darkest;
+    }
 
     &__content {
       padding: 2rem;
