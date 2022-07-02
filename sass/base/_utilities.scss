@@ -14,3 +14,10 @@
 .text__center {
   text-align: center !important;
 }
+
+.hidden {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  visibility: hidden;
+}

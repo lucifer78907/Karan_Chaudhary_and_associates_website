@@ -35,9 +35,9 @@ Implementing the Steps
 
 An action plan without a good implementation mechanism tends to fail in its operation. Any solution to a legal problem requires a strong implementation along with an effective course of action. We believe in a wholesome execution of the plan in order to draw in fruitful results. Our team strives to achieve parity in planning and performance.
 
-#####
+# Practice Area
 
-Practice Area
+1.) Domestic violence -->
 
 ###
 
