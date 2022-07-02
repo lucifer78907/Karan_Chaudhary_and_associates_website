@@ -246,20 +246,13 @@ body {
   background-color: #222831; }
   .practice__areas--cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 4rem; }
+    grid-template-columns: repeat(auto-fit, minmax(40rem, max-content));
+    column-gap: 6rem;
+    row-gap: 8rem; }
   .practice__areas--card {
     color: #fff; }
-    .practice__areas--card:nth-child(2) {
-      grid-row: 2/-1;
-      grid-column: 2 / span 1; }
-    .practice__areas--card:nth-child(3) {
-      grid-column: 3/-1; }
     .practice__areas--card__content {
       padding: 2rem; }
-      .practice__areas--card__content:hover {
-        transform: scale(1.05); }
     .practice__areas--card__content--para {
       font-size: 1.6rem;
       line-height: 1.6; }
