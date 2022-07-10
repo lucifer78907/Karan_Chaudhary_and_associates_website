@@ -16,11 +16,20 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <script defer src="js/script.js"></script>
   </head>
   <body>
     <header class="header">
+      <input
+        type="checkbox"
+        class="hidden header__checkbox"
+        name="check"
+        id="tick"
+      />
       <div class="header__foreground">
-        <span class="line"></span>
+        <label for="tick" class="header__label">
+          <span class="header__line"> </span
+        ></label>
       </div>
       <div class="header__background">&nbsp;</div>
     </header>
