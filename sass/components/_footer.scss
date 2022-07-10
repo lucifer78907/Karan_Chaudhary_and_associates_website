@@ -1,0 +1,20 @@
+.footer {
+  padding: 6rem;
+  background-color: $color-grey-darkest;
+
+  &__para {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    color: $color-primary;
+  }
+  &__span {
+    display: inline-block;
+    font-weight: 700;
+    transition: all 500ms;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}

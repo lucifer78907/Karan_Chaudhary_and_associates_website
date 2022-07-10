@@ -109,6 +109,18 @@ body {
   pointer-events: none;
   visibility: hidden; }
 
+.header {
+  background-color: red; }
+  .header__background {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    background-image: radial-gradient(#ffd369, #fff, #393e46);
+    z-index: 1000;
+    transition: all 500ms ease-out; }
+    .header__background:hover {
+      transform: scale(150); }
+
 .btn:link, .btn:visited {
   align-self: flex-start;
   text-decoration: none;
@@ -145,6 +157,21 @@ body {
     font-weight: 300;
     color: #222831;
     line-height: 1.6; }
+
+.footer {
+  padding: 6rem;
+  background-color: #222831; }
+  .footer__para {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #ffd369; }
+  .footer__span {
+    display: inline-block;
+    font-weight: 700;
+    transition: all 500ms; }
+    .footer__span:hover {
+      color: #fff; }
 
 .contact {
   padding: 8rem;
@@ -185,7 +212,7 @@ body {
 .contact__email:hover ~ .contact__email--content,
 .contact__phone:hover ~ .contact__phone--content {
   top: 62%;
-  left: 40%;
+  left: 50%;
   opacity: 1;
   transform: translate(-50%, -50%);
   font-size: 3rem;

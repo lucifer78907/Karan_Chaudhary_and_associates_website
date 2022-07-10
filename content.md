@@ -39,10 +39,4 @@ An action plan without a good implementation mechanism tends to fail in its oper
 
 1.) Domestic violence -->
 
-###
-
-FAQ
-
-##
-
-Contact Me
+# Contact Me

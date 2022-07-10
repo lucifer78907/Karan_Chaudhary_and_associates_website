@@ -1,0 +1,19 @@
+.header {
+  background-color: red;
+
+  &__background {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    background-image: radial-gradient(
+      $color-primary,
+      $color-white,
+      $color-grey-dark
+    );
+    z-index: 1000;
+    transition: all 500ms ease-out;
+    &:hover {
+      transform: scale(150);
+    }
+  }
+}
