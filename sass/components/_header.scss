@@ -1,52 +1,27 @@
 .header {
-  background-color: red;
-  position: relative;
+  &__label,
+  &__background {
+    position: fixed;
+    height: 7rem;
+    width: 7rem;
+    top: 6.5rem;
+    right: 6.5rem;
+    border-radius: 50%;
+  }
 
   &__label {
-    height: 7rem;
-    width: 7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__background {
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-    background-image: radial-gradient($color-primary, $color-white);
-    z-index: 1000;
-    transition: all 500ms ease-out;
-    &:hover {
-      transform: scale(150);
-    }
-  }
-
-  &__foreground {
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
     background-color: $color-white;
+    z-index: 2001;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0.45rem 0.9rem rgba(0, 0, 0, 0.34);
-    z-index: 2000;
+    box-shadow: 0 0.5rem 0.9rem lighten($color-grey-darkest, 15);
 
-    &:hover {
-      .header__line::before {
-        top: -11px;
-      }
-      .header__line::after {
-        bottom: -11px;
-      }
+    &:hover .header__line::before {
+      top: -11px;
+    }
+    &:hover .header__line::after {
+      bottom: -11px;
     }
   }
 
@@ -61,11 +36,11 @@
     &::after {
       content: "";
       display: inline-block;
-      height: 2px;
       width: 100%;
+      height: 2px;
       background-color: $color-grey-darkest;
       position: absolute;
-      transition: all 200ms;
+      transition: all 300ms ease-out;
     }
 
     &::before {
@@ -76,16 +51,18 @@
     }
   }
 
-  //   Functionality
-  &__checkbox:checked + &__foreground &__label &__line {
-    background-color: transparent;
+  &__background {
+    background-image: radial-gradient(
+      $color-primary,
+      darken($color-primary, 10)
+    );
+    transition: all 500ms ease-out;
+    z-index: 2000;
   }
-  &__checkbox:checked + &__foreground &__label &__line::before {
-    top: 0;
-    transform: rotate(130deg);
-  }
-  &__checkbox:checked + &__foreground &__label &__line::after {
-    top: 0;
-    transform: rotate(-130deg);
+
+  // Functionality
+
+  &__checkbox:checked ~ &__background {
+    transform: scale(100);
   }
 }
