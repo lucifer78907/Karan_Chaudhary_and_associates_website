@@ -31,6 +31,10 @@ body {
   padding: 3rem;
   background-color: #fff; }
 
+::selection {
+  background-color: #ffd369;
+  color: #222831; }
+
 :root {
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Playfair Display", serif;
@@ -112,6 +116,9 @@ body {
 .scaled {
   transform: scale(100); }
 
+.body_hidden {
+  display: none; }
+
 .header__label, .header__background {
   position: fixed;
   height: 7rem;
@@ -126,7 +133,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0.5rem 0.9rem #414d5e; }
+  box-shadow: 0 0.5rem 0.9rem #4c596d; }
   .header__label:hover .header__line::before {
     top: -11px; }
   .header__label:hover .header__line::after {
@@ -158,6 +165,17 @@ body {
 
 .header__checkbox:checked ~ .header__background {
   transform: scale(100); }
+
+.header__checkbox:checked + .header__label .header__line {
+  background-color: transparent; }
+
+.header__checkbox:checked + .header__label .header__line::before {
+  top: 0;
+  transform: rotate(130deg); }
+
+.header__checkbox:checked + .header__label .header__line::after {
+  top: 0;
+  transform: rotate(-130deg); }
 
 .btn:link, .btn:visited {
   align-self: flex-start;

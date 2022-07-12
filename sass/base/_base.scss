@@ -17,3 +17,8 @@ body {
   padding: 3rem;
   background-color: $color-white;
 }
+
+::selection {
+  background-color: $color-primary;
+  color: $color-grey-darkest;
+}

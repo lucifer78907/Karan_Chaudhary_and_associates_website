@@ -15,7 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0.5rem 0.9rem lighten($color-grey-darkest, 15);
+    box-shadow: 0 0.5rem 0.9rem lighten($color-grey-darkest, 20);
 
     &:hover .header__line::before {
       top: -11px;
@@ -64,5 +64,19 @@
 
   &__checkbox:checked ~ &__background {
     transform: scale(100);
+  }
+
+  &__checkbox:checked + &__label &__line {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__label &__line::before {
+    top: 0;
+    transform: rotate(130deg);
+  }
+
+  &__checkbox:checked + &__label &__line::after {
+    top: 0;
+    transform: rotate(-130deg);
   }
 }

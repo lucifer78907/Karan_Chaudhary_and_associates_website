@@ -27,3 +27,5 @@ navigationBox.addEventListener("click", function (e) {
     setTimeout(scrollIntoSection.bind(id), 1000);
   }
 });
+
+window.addEventListener("load", () => console.log("Loaded"));
