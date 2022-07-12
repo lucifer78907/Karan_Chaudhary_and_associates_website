@@ -28,4 +28,26 @@ navigationBox.addEventListener("click", function (e) {
   }
 });
 
-window.addEventListener("load", () => console.log("Loaded"));
+// Spinner
+
+const spinner = document.createElement("div");
+const showSpinner = function () {
+  const markup = `
+<div class="loading__screen">
+      <div class="loading__screen--main">
+        <div class="loading__screen--icon"></div>
+      </div>
+    </div>
+`;
+  spinner.classList.add("loading__screen");
+  spinner.innerHTML = markup;
+  body.prepend(spinner);
+};
+const hideSpinner = function () {
+  spinner.remove();
+};
+
+showSpinner();
+
+// setTimeout(hideSpinner, 3000);
+window.addEventListener("load", () => setTimeout(hideSpinner, 3000));

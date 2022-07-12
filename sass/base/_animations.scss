@@ -18,3 +18,19 @@
     opacity: 1;
   }
 }
+
+@keyframes zoomInRotate {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+    border-radius: 50%;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5) translateY(-5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(0) translateY(0) rotate(360deg);
+  }
+}
