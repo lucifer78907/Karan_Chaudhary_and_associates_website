@@ -51,3 +51,21 @@ showSpinner();
 
 // setTimeout(hideSpinner, 3000);
 window.addEventListener("load", () => setTimeout(hideSpinner, 3000));
+
+// PopUp
+const heroSection = document.querySelector(".hero");
+const showPopup = function () {
+  const markup = `
+  <div class="cookie" id="cookie">
+      <p class="cookie__message">
+        To continue please accept our
+        <a href="popup.html">Terms and Conditions</a>
+      </p>
+      <a href="#/" class="btn btn--disclaimer btn--agree">I agree</a>
+      <a href="#/" class="btn btn-disagree">I disagree</a>
+      </div>
+  `;
+  heroSection.insertAdjacentHTML("afterend", markup);
+};
+
+showPopup();

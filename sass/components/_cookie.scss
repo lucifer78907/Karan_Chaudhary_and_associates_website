@@ -1,0 +1,12 @@
+.cookie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+
+  &__message {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+}

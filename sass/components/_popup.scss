@@ -1,0 +1,21 @@
+.popup {
+  position: fixed;
+  z-index: 100000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__background {
+    padding: 3rem;
+    height: max-content;
+    width: 80%;
+    background-image: linear-gradient($color-grey-dark, $color-grey-darkest);
+    overflow: scroll;
+  }
+
+  &__para {
+    color: $color-grey-light;
+    font-size: 1.6rem;
+    line-height: 1.7;
+  }
+}
