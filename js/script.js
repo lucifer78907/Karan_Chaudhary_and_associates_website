@@ -59,13 +59,26 @@ const showPopup = function () {
   <div class="cookie" id="cookie">
       <p class="cookie__message">
         To continue please accept our
-        <a href="popup.html">Terms and Conditions</a>
+        <a href="popup.html" target="_blank">Terms and Conditions</a>
       </p>
       <a href="#/" class="btn btn--disclaimer btn--agree">I agree</a>
-      <a href="#/" class="btn btn-disagree">I disagree</a>
+      <a href="#/" class="btn btn--disagree">I disagree</a>
       </div>
   `;
   heroSection.insertAdjacentHTML("afterend", markup);
 };
 
 showPopup();
+
+const btnAgree = document.querySelector(".btn--agree");
+const btnDisagree = document.querySelector(".btn--disagree");
+
+btnDisagree.addEventListener(
+  "click",
+  () => (window.location.href = "https://www.google.com")
+);
+
+btnAgree.addEventListener("click", function () {
+  document.cookie = "agree_button=i_agree";
+  document.getElementById("cookie").remove();
+});

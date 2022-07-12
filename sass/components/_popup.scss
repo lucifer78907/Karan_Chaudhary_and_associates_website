@@ -1,9 +1,9 @@
 .popup {
-  position: fixed;
   z-index: 100000;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3rem;
 
   &__background {
     padding: 3rem;
