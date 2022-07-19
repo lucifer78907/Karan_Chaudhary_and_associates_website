@@ -58,4 +58,8 @@
   font-size: 3rem;
   visibility: visible;
   box-shadow: none;
+  @include respond(laptop) {
+    font-size: 2rem;
+    top: 60%;
+  }
 }

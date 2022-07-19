@@ -5,6 +5,10 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   animation: slideInLeft 700ms ease-out 3s;
+
+  @include respond(laptop) {
+    font-size: 7rem;
+  }
 }
 
 .heading__secondary {
@@ -17,6 +21,9 @@
   border-bottom: transparent solid 1px;
   transition: border-bottom 500ms;
   z-index: 2;
+  @include respond(laptop) {
+    font-size: 6rem;
+  }
 
   &:hover {
     &::before {
@@ -62,4 +69,7 @@
   font-size: 3rem;
   color: $color-grey-light;
   margin-bottom: 2rem;
+  @include respond(laptop) {
+    font-size: 2.4rem;
+  }
 }

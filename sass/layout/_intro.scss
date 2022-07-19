@@ -14,6 +14,9 @@
     font-weight: 300;
     line-height: 1.7;
     color: $color-grey-dark;
+    @include respond(laptop) {
+      font-size: 2rem;
+    }
 
     & strong {
       font-weight: 700;
@@ -46,6 +49,9 @@
     box-shadow: var(--shadow-light-bordered);
     border-radius: 9px;
     transition: all 0.5s;
+    @include respond(laptop) {
+      height: 60%;
+    }
 
     &:hover {
       filter: blur(2px) brightness(50%);
@@ -56,6 +62,10 @@
       visibility: visible;
       pointer-events: none;
       bottom: 60%;
+      @include respond(laptop) {
+        font-size: 2rem;
+        bottom: 68%;
+      }
     }
   }
 }

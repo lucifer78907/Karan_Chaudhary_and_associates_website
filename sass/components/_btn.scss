@@ -21,6 +21,10 @@
     transition: all 0.5s;
     animation: slideUp 500ms ease-out backwards;
     animation-delay: 4s;
+
+    @include respond(laptop) {
+      font-size: 2rem;
+    }
   }
 
   &:hover {

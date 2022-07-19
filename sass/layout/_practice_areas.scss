@@ -7,6 +7,12 @@
     grid-template-columns: repeat(auto-fit, minmax(40rem, max-content));
     column-gap: 6rem;
     row-gap: 8rem;
+
+    @include respond(laptop) {
+      grid-template-columns: repeat(auto-fit, minmax(30rem, max-content));
+      column-gap: 4rem;
+      row-gap: 6rem;
+    }
   }
 
   &--card {

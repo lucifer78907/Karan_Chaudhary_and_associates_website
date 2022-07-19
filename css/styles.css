@@ -60,6 +60,9 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   animation: slideInLeft 700ms ease-out 3s; }
+  @media only screen and (max-width: 87.5em) {
+    .heading__primary {
+      font-size: 7rem; } }
 
 .heading__secondary {
   display: inline-block;
@@ -71,6 +74,9 @@ body {
   border-bottom: transparent solid 1px;
   transition: border-bottom 500ms;
   z-index: 2; }
+  @media only screen and (max-width: 87.5em) {
+    .heading__secondary {
+      font-size: 6rem; } }
   .heading__secondary:hover::before {
     width: 105%;
     box-shadow: 0 0.025rem 0.75rem rgba(34, 40, 49, 0.505); }
@@ -103,6 +109,9 @@ body {
   font-size: 3rem;
   color: #eee;
   margin-bottom: 2rem; }
+  @media only screen and (max-width: 87.5em) {
+    .heading__quaternary {
+      font-size: 2.4rem; } }
 
 .margin-bottom-sm {
   margin-bottom: 2rem !important; }
@@ -205,6 +214,9 @@ body {
   transition: all 0.5s;
   animation: slideUp 500ms ease-out backwards;
   animation-delay: 4s; }
+  @media only screen and (max-width: 87.5em) {
+    .btn:link, .btn:visited {
+      font-size: 2rem; } }
 
 .btn:hover {
   color: #393e46;
@@ -363,6 +375,11 @@ body {
   font-size: 3rem;
   visibility: visible;
   box-shadow: none; }
+  @media only screen and (max-width: 87.5em) {
+    .contact__email:hover ~ .contact__email--content,
+    .contact__phone:hover ~ .contact__phone--content {
+      font-size: 2rem;
+      top: 60%; } }
 
 .choose {
   padding: 8rem;
@@ -379,12 +396,23 @@ body {
     flex-direction: column;
     gap: 2rem;
     align-items: center; }
+    @media only screen and (max-width: 87.5em) {
+      .choose__reason {
+        flex: 1 0 30rem;
+        text-align: center; } }
     .choose__reason--text {
       font-size: 2.2rem; }
+      @media only screen and (max-width: 87.5em) {
+        .choose__reason--text {
+          font: 2rem; } }
     .choose__reason--icon {
       width: 6rem;
       height: 6rem;
       color: #ffd369; }
+      @media only screen and (max-width: 87.5em) {
+        .choose__reason--icon {
+          width: 4rem;
+          height: 4rem; } }
 
 .hero {
   height: 100vh;
@@ -433,6 +461,9 @@ body {
     font-weight: 300;
     line-height: 1.7;
     color: #393e46; }
+    @media only screen and (max-width: 87.5em) {
+      .intro__para {
+        font-size: 2rem; } }
     .intro__para strong {
       font-weight: 700; }
   .intro__img-box {
@@ -457,6 +488,9 @@ body {
     box-shadow: var(--shadow-light-bordered);
     border-radius: 9px;
     transition: all 0.5s; }
+    @media only screen and (max-width: 87.5em) {
+      .intro__img {
+        height: 60%; } }
     .intro__img:hover {
       filter: blur(2px) brightness(50%); }
     .intro__img:hover + .intro__img-desc {
@@ -464,6 +498,10 @@ body {
       visibility: visible;
       pointer-events: none;
       bottom: 60%; }
+      @media only screen and (max-width: 87.5em) {
+        .intro__img:hover + .intro__img-desc {
+          font-size: 2rem;
+          bottom: 68%; } }
 
 .practice__areas {
   padding: 8rem;
@@ -473,6 +511,11 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(40rem, max-content));
     column-gap: 6rem;
     row-gap: 8rem; }
+    @media only screen and (max-width: 87.5em) {
+      .practice__areas--cards {
+        grid-template-columns: repeat(auto-fit, minmax(30rem, max-content));
+        column-gap: 4rem;
+        row-gap: 6rem; } }
   .practice__areas--card {
     color: #fff;
     transition: all 500ms; }
