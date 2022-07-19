@@ -27,6 +27,10 @@
     width: 10rem;
     height: 10rem;
     color: $color-grey-darkest;
+    @include respond(tab-land) {
+      width: 6rem;
+      height: 6rem;
+    }
   }
 }
 .contacts {
@@ -61,5 +65,15 @@
   @include respond(laptop) {
     font-size: 2rem;
     top: 60%;
+  }
+  @include respond(tab-land) {
+    top: 59%;
+    font-size: 1.6rem;
+    left: 47%;
+  }
+}
+.contact__phone:hover ~ .contact__phone--content {
+  @include respond(tab-land) {
+    left: 52%;
   }
 }

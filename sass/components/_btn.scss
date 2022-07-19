@@ -25,6 +25,9 @@
     @include respond(laptop) {
       font-size: 2rem;
     }
+    @include respond(tab-land) {
+      align-self: center;
+    }
   }
 
   &:hover {

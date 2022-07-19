@@ -18,6 +18,9 @@
 
   &__item {
     font-size: 4.8rem;
+    @include respond(laptop) {
+      font-size: 4rem;
+    }
     font-weight: 100;
     color: $color-grey-darkest;
     background-image: linear-gradient(

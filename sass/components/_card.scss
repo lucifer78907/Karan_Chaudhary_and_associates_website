@@ -9,5 +9,9 @@
     font-weight: 300;
     color: $color-grey-darkest;
     line-height: 1.6;
+    @include respond(tab-land) {
+      font-size: 1.7rem;
+      line-height: 1.7;
+    }
   }
 }

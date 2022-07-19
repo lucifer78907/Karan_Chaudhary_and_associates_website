@@ -9,6 +9,9 @@
   @include respond(laptop) {
     font-size: 7rem;
   }
+  @include respond(tab-land) {
+    text-align: center;
+  }
 }
 
 .heading__secondary {
@@ -63,6 +66,9 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  @include respond(tab-land) {
+    font-size: 4rem;
+  }
 }
 
 .heading__quaternary {

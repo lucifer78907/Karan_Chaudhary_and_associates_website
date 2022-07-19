@@ -15,6 +15,9 @@
   grid-template-columns: repeat(auto-fit, minmax(50rem, max-content));
   justify-items: center;
   align-items: center;
+  @include respond(tab-land) {
+    row-gap: 4rem;
+  }
 
   &__text-box {
     display: flex;
@@ -28,11 +31,18 @@
     animation: slideUp 500ms ease-out backwards;
     animation-delay: 3500ms;
     margin-bottom: 4rem;
+    @include respond(tab-land) {
+      margin-bottom: 3rem;
+      align-self: center;
+    }
   }
 
   &__img {
     width: 40vh;
     border-radius: 9px;
     box-shadow: var(--shadow-light-bordered);
+    @include respond(tab-land) {
+      width: 25vh;
+    }
   }
 }

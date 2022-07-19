@@ -7,6 +7,10 @@
     top: 6.5rem;
     right: 6.5rem;
     border-radius: 50%;
+    @include respond(laptop) {
+      height: 6rem;
+      width: 6rem;
+    }
   }
 
   &__label {

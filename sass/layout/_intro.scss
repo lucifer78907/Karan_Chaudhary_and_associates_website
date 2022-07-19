@@ -7,6 +7,10 @@
     grid-template-columns: repeat(auto-fit, minmax(50rem, max-content));
     justify-items: center;
     column-gap: 8rem;
+
+    @include respond(tab-land) {
+      row-gap: 8rem;
+    }
   }
 
   &__para {
