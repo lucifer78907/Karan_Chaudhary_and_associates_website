@@ -30,6 +30,7 @@ navigationBox.addEventListener("click", function (e) {
 
 // Spinner
 
+
 const spinner = document.createElement("div");
 const showSpinner = function () {
   const markup = `
