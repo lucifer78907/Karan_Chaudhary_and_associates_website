@@ -16,6 +16,11 @@
       top: 3.5rem;
       right: 3.5rem;
     }
+
+    @include respond(phone) {
+      top: 1.5rem;
+      right: 1.5rem;
+    }
   }
 
   &__label {

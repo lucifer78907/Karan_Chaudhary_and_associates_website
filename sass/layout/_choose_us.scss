@@ -3,6 +3,10 @@
   background-color: $color-grey-darkest;
   color: $color-white;
 
+  @include respond(phone) {
+    padding: 4rem 2rem;
+  }
+
   &__reasons {
     display: flex;
     flex-wrap: wrap;

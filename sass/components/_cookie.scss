@@ -5,8 +5,16 @@
   gap: 3rem;
   padding: 2rem;
 
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
   &__message {
     font-size: 1.6rem;
     font-weight: 500;
+
+    @include respond(phone) {
+      text-align: center;
+    }
   }
 }

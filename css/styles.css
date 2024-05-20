@@ -57,6 +57,11 @@ body {
     padding: 1rem;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  body {
+    padding: 0rem;
+  }
+}
 
 ::selection {
   background-color: #ffd369;
@@ -88,6 +93,11 @@ body {
     text-align: center;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .heading__primary {
+    font-size: 5rem;
+  }
+}
 
 .heading__secondary {
   display: inline-block;
@@ -108,6 +118,11 @@ body {
 @media only screen and (max-width: 56.25em) {
   .heading__secondary {
     font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .heading__secondary {
+    font-size: 3.2rem;
   }
 }
 .heading__secondary:hover::before {
@@ -145,6 +160,11 @@ body {
 @media only screen and (max-width: 78.75em) {
   .heading__tertiary {
     font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .heading__tertiary {
+    font-size: 3rem;
   }
 }
 
@@ -212,6 +232,12 @@ body {
   .header__label, .header__background {
     top: 3.5rem;
     right: 3.5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .header__label, .header__background {
+    top: 1.5rem;
+    right: 1.5rem;
   }
 }
 .header__label {
@@ -313,6 +339,13 @@ body {
   background-color: #ffd369;
   margin-bottom: 6rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .card {
+    clip-path: none;
+    padding: 3rem;
+    border-radius: 11px;
+  }
+}
 .card__article {
   font-size: 1.8rem;
   font-weight: 300;
@@ -335,6 +368,7 @@ body {
   font-size: 2rem;
   font-weight: 300;
   color: #ffd369;
+  line-height: 1.7;
 }
 .footer__span {
   display: inline-block;
@@ -420,9 +454,19 @@ body {
   gap: 3rem;
   padding: 2rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .cookie {
+    flex-direction: column;
+  }
+}
 .cookie__message {
   font-size: 1.6rem;
   font-weight: 500;
+}
+@media only screen and (max-width: 37.5em) {
+  .cookie__message {
+    text-align: center;
+  }
 }
 
 .loading__screen {
@@ -464,6 +508,11 @@ body {
   .contact__card--main {
     height: auto;
     width: 100%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .contact__card--main {
+    padding: 4rem 1rem;
   }
 }
 .contact__title {
@@ -512,11 +561,21 @@ body {
     flex-direction: column;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .contacts > * {
+    font-size: 1.6rem;
+  }
+}
 
 .choose {
   padding: 8rem;
   background-color: #222831;
   color: #fff;
+}
+@media only screen and (max-width: 37.5em) {
+  .choose {
+    padding: 4rem 2rem;
+  }
 }
 .choose__reasons {
   display: flex;
@@ -598,6 +657,12 @@ body {
   .hero__tagline {
     margin-bottom: 3rem;
     align-self: center;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .hero__tagline {
+    margin-bottom: 0rem;
   }
 }
 .hero__img {
@@ -643,6 +708,11 @@ body {
     flex-direction: column;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .intro {
+    padding: 2rem;
+  }
+}
 .intro__main-box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50rem, max-content));
@@ -652,6 +722,12 @@ body {
 @media only screen and (max-width: 78.75em) {
   .intro__main-box {
     row-gap: 8rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .intro__main-box {
+    display: flex;
+    flex-direction: column;
   }
 }
 .intro__para {
@@ -665,6 +741,11 @@ body {
     font-size: 2rem;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .intro__para {
+    font-size: 1.6rem;
+  }
+}
 .intro__para strong {
   font-weight: 700;
 }
@@ -673,6 +754,11 @@ body {
   justify-content: center;
   position: relative;
   transition: all 500ms;
+}
+@media only screen and (max-width: 37.5em) {
+  .intro__img-box {
+    height: 50rem;
+  }
 }
 .intro__img-desc {
   position: absolute;
@@ -717,6 +803,11 @@ body {
 .practice__areas {
   padding: 8rem;
   background-color: #222831;
+}
+@media only screen and (max-width: 37.5em) {
+  .practice__areas {
+    padding: 4rem 2rem;
+  }
 }
 .practice__areas--cards {
   display: grid;

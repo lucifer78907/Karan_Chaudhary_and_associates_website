@@ -30,7 +30,6 @@ navigationBox.addEventListener("click", function (e) {
 
 // Spinner
 
-
 const spinner = document.createElement("div");
 const showSpinner = function () {
   const markup = `
@@ -62,8 +61,8 @@ const showPopup = function () {
         To continue please accept our
         <a href="popup.html" target="_blank">Terms and Conditions</a>
       </p>
-      <a href="#/" class="btn btn--disclaimer btn--agree">I agree</a>
-      <a href="#/" class="btn btn--disagree">I disagree</a>
+      <a href="#/" class="btn btn--disclaimer btn--agree">Agree</a>
+      <a href="#/" class="btn btn--disagree">Disagree</a>
       </div>
   `;
   heroSection.insertAdjacentHTML("afterend", markup);

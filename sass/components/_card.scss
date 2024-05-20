@@ -4,6 +4,12 @@
   background-color: $color-primary;
   margin-bottom: 6rem;
 
+  @include respond(phone) {
+    clip-path: none;
+    padding: 3rem;
+    border-radius: 11px;
+  }
+
   &__article {
     font-size: 1.8rem;
     font-weight: 300;

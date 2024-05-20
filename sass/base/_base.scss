@@ -20,6 +20,10 @@ body {
   @include respond(tab-port) {
     padding: 1rem;
   }
+
+  @include respond(phone) {
+    padding: 0rem;
+  }
 }
 
 ::selection {

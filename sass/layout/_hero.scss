@@ -42,6 +42,11 @@
     @include respond(tab-land) {
       margin-bottom: 3rem;
       align-self: center;
+      text-align: center;
+    }
+
+    @include respond(phone) {
+      margin-bottom: 0rem;
     }
   }
 

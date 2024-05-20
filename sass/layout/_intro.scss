@@ -8,6 +8,10 @@
     flex-direction: column;
   }
 
+  @include respond(phone) {
+    padding: 2rem;
+  }
+
   &__main-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50rem, max-content));
@@ -16,6 +20,11 @@
 
     @include respond(tab-land) {
       row-gap: 8rem;
+    }
+
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -28,6 +37,10 @@
       font-size: 2rem;
     }
 
+    @include respond(phone) {
+      font-size: 1.6rem;
+    }
+
     & strong {
       font-weight: 700;
     }
@@ -38,6 +51,10 @@
     justify-content: center;
     position: relative;
     transition: all 500ms;
+
+    @include respond(phone) {
+      height: 50rem;
+    }
   }
 
   &__img-desc {
