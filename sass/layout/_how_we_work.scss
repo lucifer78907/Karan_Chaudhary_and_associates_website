@@ -2,6 +2,10 @@
   padding: 8rem;
   background-color: $color-grey-light;
 
+  @include respond(tab-port) {
+    padding: 4rem 2rem;
+  }
+
   &__tagline {
     font-size: 2.4rem;
     font-weight: 300;

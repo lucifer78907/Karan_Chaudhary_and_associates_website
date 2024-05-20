@@ -19,6 +19,14 @@
     row-gap: 4rem;
   }
 
+  @include respond(tab-port) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+  }
+
   &__text-box {
     display: flex;
     flex-direction: column;

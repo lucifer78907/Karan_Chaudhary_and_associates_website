@@ -28,6 +28,10 @@
     font-size: 6rem;
   }
 
+  @include respond(tab-port) {
+    font-size: 5rem;
+  }
+
   &:hover {
     &::before {
       width: 105%;

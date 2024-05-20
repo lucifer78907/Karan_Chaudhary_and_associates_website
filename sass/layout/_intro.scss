@@ -2,6 +2,12 @@
   padding: 8rem;
   background-color: $color-grey-light;
 
+  @include respond(tab-port) {
+    display: flex;
+    padding: 4rem;
+    flex-direction: column;
+  }
+
   &__main-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50rem, max-content));

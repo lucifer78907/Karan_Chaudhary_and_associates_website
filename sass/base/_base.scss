@@ -16,6 +16,10 @@ body {
   font-family: var(--font-primary);
   padding: 3rem;
   background-color: $color-white;
+
+  @include respond(tab-port) {
+    padding: 1rem;
+  }
 }
 
 ::selection {
