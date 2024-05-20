@@ -1,5 +1,9 @@
 .contact {
   padding: 8rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
   background-image: linear-gradient(
     to right bottom,
     rgba(255, 210, 105, 0.823),
@@ -16,6 +20,11 @@
     padding: 6rem;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 9px;
+
+    @include respond(tab-port) {
+      height: auto;
+      width: 100%;
+    }
   }
 
   &__title {
@@ -38,6 +47,10 @@
   height: 100%;
   justify-content: space-evenly;
   align-items: center;
+  @include respond(tab-land) {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
   & > * {
     padding: 2rem;
@@ -46,34 +59,15 @@
     margin: 2rem;
     transition: all 500ms ease-out;
 
-    &:hover {
-      flex: 1;
-      background-color: $color-primary;
-    }
-  }
-}
-
-.contact__email:hover ~ .contact__email--content,
-.contact__phone:hover ~ .contact__phone--content {
-  top: 62%;
-  left: 50%;
-  opacity: 1;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
-  visibility: visible;
-  box-shadow: none;
-  @include respond(laptop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2rem;
-    top: 60%;
-  }
-  @include respond(tab-land) {
-    top: 59%;
-    font-size: 1.6rem;
-    left: 47%;
-  }
-}
-.contact__phone:hover ~ .contact__phone--content {
-  @include respond(tab-land) {
-    left: 52%;
+    gap: 4rem;
+
+    @include respond(tab-port) {
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
   }
 }

@@ -448,12 +448,23 @@ body {
   align-items: center;
   position: relative;
 }
+@media only screen and (max-width: 56.25em) {
+  .contact {
+    padding: 0;
+  }
+}
 .contact__card--main {
   height: 50rem;
   width: 80vw;
   padding: 6rem;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 9px;
+}
+@media only screen and (max-width: 56.25em) {
+  .contact__card--main {
+    height: auto;
+    width: 100%;
+  }
 }
 .contact__title {
   font-size: 6rem;
@@ -477,47 +488,28 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+@media only screen and (max-width: 78.75em) {
+  .contacts {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
 .contacts > * {
   padding: 2rem;
   box-shadow: 0 1rem 1rem rgba(34, 40, 49, 0.311);
   border-radius: 9px;
   margin: 2rem;
   transition: all 500ms ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  gap: 4rem;
 }
-.contacts > *:hover {
-  flex: 1;
-  background-color: #ffd369;
-}
-
-.contact__email:hover ~ .contact__email--content,
-.contact__phone:hover ~ .contact__phone--content {
-  top: 62%;
-  left: 50%;
-  opacity: 1;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
-  visibility: visible;
-  box-shadow: none;
-}
-@media only screen and (max-width: 87.5em) {
-  .contact__email:hover ~ .contact__email--content,
-  .contact__phone:hover ~ .contact__phone--content {
-    font-size: 2rem;
-    top: 60%;
-  }
-}
-@media only screen and (max-width: 78.75em) {
-  .contact__email:hover ~ .contact__email--content,
-  .contact__phone:hover ~ .contact__phone--content {
-    top: 59%;
-    font-size: 1.6rem;
-    left: 47%;
-  }
-}
-
-@media only screen and (max-width: 78.75em) {
-  .contact__phone:hover ~ .contact__phone--content {
-    left: 52%;
+@media only screen and (max-width: 56.25em) {
+  .contacts > * {
+    justify-content: space-evenly;
+    flex-direction: column;
   }
 }
 
